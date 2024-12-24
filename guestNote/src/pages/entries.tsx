@@ -1,11 +1,9 @@
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import { Skeleton} from '@mui/material';
 import axios from 'axios';
 import Note from '../components/note';
 import Pagination from '../components/pagination';
-// import Post from '@/components/post';
-// import Pagination from '@/components/pagination';
-// import NoteAddIcon from '@mui/icons-material/NoteAdd';
+
 var pageSize = 3;
 
 export const getAllNotes = async()=>{

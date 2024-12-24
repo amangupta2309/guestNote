@@ -20,7 +20,9 @@ const Note = ({note})=>{
                         <div className="flex flex-row gap-4 items-center">
                             <Avatar />
                             <CardTitle>{note.name}</CardTitle>
+                            <p>{new Date(note.createdAt).toLocaleString()}</p>
                         </div>
+
                     </CardHeader>
                     
                     <CardContent>

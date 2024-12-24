@@ -1,7 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Button } from "../components/ui/button"
-import { Skeleton, TextField } from '@mui/material';
+import { Skeleton} from '@mui/material';
 import axios from 'axios';
 import Note from '../components/note';
 import Pagination from '../components/pagination';
@@ -13,7 +11,7 @@ var pageSize = 3;
 export const getAllNotes = async()=>{
     try{
       const response = await axios.get(`${import.meta.env.VITE_BASE_URL}/getAllNotes`);
-      console.log(response.data);
+    //   console.log(response.data);
       return response.data;
       }
       catch(err:any){

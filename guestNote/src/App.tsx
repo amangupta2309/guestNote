@@ -1,4 +1,3 @@
-import React from 'react';
 import Nav from './components/nav';
 import LandingPage from './pages/landingPage';
 // import Login from './pages/loginPage'

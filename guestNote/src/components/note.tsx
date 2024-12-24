@@ -8,12 +8,11 @@ import { useState } from "react";
     CardTitle,
   } from "./ui/card";
 import { Avatar } from "@mui/material";
-import { Button } from "./ui/button";
 
 const Note = ({note})=>{
 
     const noteId = note._id;
-    console.log(note);
+    // console.log(note);
     
     return(
         <Card key={note._id} className='flex flex-col p-2 w-full h-[14rem]'>
